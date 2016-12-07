@@ -29,7 +29,7 @@ if [ "x$KAFKA_HEAP_OPTS" = "x" ]; then
     export KAFKA_HEAP_OPTS="-Xmx512M -Xms512M"
 fi
 
-EXTRA_ARGS=${EXTRA_ARGS-'-name zookeeper -loggc'}
+EXTRA_ARGS=${EXTRA_ARGS-'-name zookeeper'}
 
 COMMAND=$1
 case $COMMAND in
